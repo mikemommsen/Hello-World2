@@ -2,6 +2,18 @@ import sys, os, shutil
 
 def this(x):
   return x
+
+def processline(inline):
+  counter = 0
+  x = inline.split(',')
+  for i in x:
+    counter += 1
+  print counter
+
+def processfile(infile):
+  f = open(infile):
+  for r in f:
+    processline(r)
   
 def rundir(indir):
   os.chdir(indir)
