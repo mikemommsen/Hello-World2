@@ -8,12 +8,14 @@ def processline(inline):
   x = inline.split(',')
   for i in x:
     counter += 1
-  print counter
+  return counter
 
 def processfile(infile):
-  f = open(infile):
+  f = open(infile)
+  counter = 0
   for r in f:
-    processline(r)
+    counter += processline(r)
+  print infile, counter
   
 def rundir(indir):
   os.chdir(indir)
