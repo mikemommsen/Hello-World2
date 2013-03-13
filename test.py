@@ -12,14 +12,16 @@ def processline(inline):
 
 def processfile(infile):
   f = open(infile)
-  counter = 0
+  counter = set()
+  counter2 = set()
   for r in f:
-    counter += processline(r)
-  print infile, counter
+    counter.add(r.split(',')[1])
+    counter2.add(r.split(',')[0])
+  print infile, len(counter), len(counter2)
   
 def rundir(indir):
   os.chdir(indir)
-  files = os.listdir('.')
+  files = sorted(os.listdir('.'))
   for x in files:
     processfile(x)
   
