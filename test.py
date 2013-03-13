@@ -4,7 +4,8 @@ def this(x):
   return x
 
 def redo(y):
-  'that'
+  for i in y:
+    print i
 
 def processline(inline):
   counter = 0

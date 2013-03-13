@@ -3,12 +3,18 @@ import sys, os, shutil
 def this(x):
   return x
 
+def redo(y):
+  'that'
+
 def processline(inline):
   counter = 0
   x = inline.split(',')
   for i in x:
     counter += 1
   return counter
+
+def that(y):
+  print 'this is fun'
 
 def processfile(infile):
   f = open(infile)
