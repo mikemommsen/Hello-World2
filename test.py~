@@ -10,9 +10,6 @@ def processline(inline):
     counter += 1
   return counter
 
-def that(y):
-  print 'this is fun'
-
 def processfile(infile):
   f = open(infile)
   counter = set()
