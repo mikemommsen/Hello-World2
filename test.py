@@ -2,6 +2,8 @@ import sys, os, shutil
 
 def this(x):
   return x
+  
+# this is a comment
 
 def processline(inline):
   counter = 0
