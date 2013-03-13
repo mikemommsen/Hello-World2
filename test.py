@@ -3,6 +3,9 @@ import sys, os, shutil
 def this(x):
   return x
 
+def redo(y):
+  'that'
+
 def processline(inline):
   counter = 0
   x = inline.split(',')
