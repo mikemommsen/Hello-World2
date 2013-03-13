@@ -6,6 +6,7 @@ def this(x):
 def redo(y):
   for i in y:
     print i
+    print 'i am still figuring out how these merges really work'
 
 def processline(inline):
   counter = 0
